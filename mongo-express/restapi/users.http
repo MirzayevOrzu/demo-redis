@@ -1,0 +1,36 @@
+### REGISTER USER
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "first_name": "Foo TEST",
+  "last_name": "Bar TEST",
+  "username": "foobar9",
+  "password": "1234"
+}
+
+### LOGIN USER
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "foobar9",
+  "password": "1234"
+}
+
+### GET ME
+GET http://localhost:3000/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU0MmVhYjZmOTBiZjYxYmI4M2Q4In0sImlhdCI6MTY5MDI5NzQwM30.Qa2e86k464HQfXNd0GUlrw5QKzcEPd0iTL-zpmjHYNE
+
+### PATCH ME
+PATCH http://localhost:3000/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU0MmVhYjZmOTBiZjYxYmI4M2Q4In0sImlhdCI6MTY5MDI5NzQwM30.Qa2e86k464HQfXNd0GUlrw5QKzcEPd0iTL-zpmjHYNE
+Content-Type: application/json
+
+{
+  "first_name": "Foo (EDITED)"
+}
+
+### DELETE ME
+DELETE http://localhost:3000/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU2OWQyYTM3OGRmYjQ4MWE5MzM2In0sImlhdCI6MTY5MDI5ODAyMX0.QBHdaU81PQ9nihE0oAgB8wY4lkyV4AG9D-lkk1ZF2W0

@@ -1,0 +1,29 @@
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU2YjIyYTM3OGRmYjQ4MWE5MzNiIn0sImlhdCI6MTY5MDI5OTE0M30.Qun4jhwj4SFXs3Up8cOBhzdOROArTipUqRMNur7i2iY
+Content-Type: application/json
+
+{
+    "text": "TODO 10",
+    "list": "64bfec53b492982590a6d5e8"
+}
+
+###
+GET http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU2YjIyYTM3OGRmYjQ4MWE5MzNiIn0sImlhdCI6MTY5MDI5OTE0M30.Qun4jhwj4SFXs3Up8cOBhzdOROArTipUqRMNur7i2iY
+
+###
+GET http://localhost:3000/todos/64bff41aad18bc5b2b97e012
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU2YjIyYTM3OGRmYjQ4MWE5MzNiIn0sImlhdCI6MTY5MDI5OTE0M30.Qun4jhwj4SFXs3Up8cOBhzdOROArTipUqRMNur7i2iY
+
+###
+PATCH http://localhost:3000/todos/64bff36848c4127e2539d3d8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU2YjIyYTM3OGRmYjQ4MWE5MzNiIn0sImlhdCI6MTY5MDI5OTE0M30.Qun4jhwj4SFXs3Up8cOBhzdOROArTipUqRMNur7i2iY
+Content-Type: application/json
+
+{
+    "list": "64bfeed9e1fcf8b6f125625a"
+}
+
+###
+DELETE http://localhost:3000/todos/64bff36848c4127e2539d3d8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiZmU2YjIyYTM3OGRmYjQ4MWE5MzNiIn0sImlhdCI6MTY5MDI5OTE0M30.Qun4jhwj4SFXs3Up8cOBhzdOROArTipUqRMNur7i2iY
